@@ -1,3 +1,6 @@
 module CookingUnitConverter
-  @@GRAMS_IN_SPOON = 2.5
+    @@table_weightes #Сколько грамм в какой-либо единице измерения
+    {
+        #TODO
+    }
 end

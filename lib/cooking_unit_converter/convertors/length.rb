@@ -1,4 +1,4 @@
-require_relative '../constants/weight'
+require_relative '../constants/length'
 require_relative './measure_helper'
 
 module CookingUnitConverter
