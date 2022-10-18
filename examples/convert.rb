@@ -12,3 +12,5 @@ puts "100 g of flour equals " + CookingUnitConverter::convert_weight(100, :g, :k
 puts "100 oz of flour equals " + CookingUnitConverter::convert_weight(100, :oz, :g).to_s() + " grams"
 
 puts "100 lb of flour equals " + CookingUnitConverter::convert_weight(100, :lb, :kg).to_s() + " kilograms"
+
+puts "100 inch equals " + CookingUnitConverter::convert_length(100, :in, :mm).to_s() + " mm"
