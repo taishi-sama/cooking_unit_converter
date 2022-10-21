@@ -14,3 +14,5 @@ puts "100 oz of flour equals " + CookingUnitConverter::convert_weight(100, :oz, 
 puts "100 lb of flour equals " + CookingUnitConverter::convert_weight(100, :lb, :kg).to_s() + " kilograms"
 
 puts "100 inch equals " + CookingUnitConverter::convert_length(100, :in, :mm).to_s() + " mm"
+
+puts "100 degrees Celsius equals " + CookingUnitConverter::convert_temperature(100, :c, :k).to_s() + " K"
