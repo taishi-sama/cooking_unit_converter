@@ -12,7 +12,8 @@ module CookingUnitConverter
     teaspoon:   4.0,
 
     cup:        250.0,
-    cm2:        1.0,
-    m2:         1_000_000.0,
+    
+    cm3:        1.0,
+    m3:         1_000_000.0,
   }
 end

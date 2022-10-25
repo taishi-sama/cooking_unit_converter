@@ -1,6 +1,6 @@
 require "./test/helper_for_tests"
 
-class TestCookingUnitConverter < Minitest::Test
+class TestCookingUnitConverterTemperature < Minitest::Test
     include CookingUnitConverter
     @@eps = 1e-5
     def test_same_measure_t_1

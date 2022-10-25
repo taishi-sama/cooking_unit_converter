@@ -2,12 +2,12 @@ require_relative '../constants/temperature'
 require_relative './measure_helper'
 
 module CookingUnitConverter
-    def is_temperature_unit?(unit)
+    def temperature_unit?(unit)
         (@@table_temperatures_to_kelvins.has_key?(unit)) && (@@table_temperatures_from_kelvins.has_key?(unit))
     end
 
     def to_k(val, unit)
-        if is_temperature_unit?(unit)
+        if temperature_unit?(unit)
             get_val_from_table(@@table_temperatures_to_kelvins, unit).call(val.to_f())
         else
             throw InvalidMeasure;
@@ -15,7 +15,7 @@ module CookingUnitConverter
     end
 
     def from_k(val, unit)
-        if is_temperature_unit?(unit)
+        if temperature_unit?(unit)
             get_val_from_table(@@table_temperatures_from_kelvins, unit).call(val.to_f())
         else
             throw InvalidMeasure;

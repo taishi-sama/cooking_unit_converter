@@ -1,7 +1,7 @@
 require "./test/helper_for_tests"
 require "cooking_unit_converter/convertors/measure_helper"
 
-class TestCookingUnitConverter < Minitest::Test
+class TestCookingUnitConverterMH < Minitest::Test
     include CookingUnitConverter
     @@test_hash = {
         value1:     10,

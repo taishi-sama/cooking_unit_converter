@@ -1,7 +1,7 @@
 require "./test/helper_for_tests"
 #require "cooking_unit_converter/convertors/measure_helper"
 
-class TestCookingUnitConverter < Minitest::Test
+class TestCookingUnitConverterLength < Minitest::Test
   include CookingUnitConverter
   @@eps = 1e-5
   def test_same_measure
