@@ -1,8 +1,21 @@
 # CookingUnitConverter
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cooking_unit_converter`. To experiment with that code, run `bin/console` for an interactive prompt.
+This gem is bunch of converters to convert one units of measure to another.
 
-TODO: Delete this and the text above, and describe your gem
+Main function is 
+convert(amount, :input_measure, :output_measure, [optional] material)
+
+
+| Category | Allowable measures |
+| ------ | ------ |
+| Length | :centimeter(:cm), :meter(:m), :kilometer(:km), :millimeter(:mm), :inch(:in), :foot(:ft) |
+| Temperature | :kelvin(:k), :celsius(:c), :fahrenheit(:f)|
+| Volume | :milliliter(:ml), :liter(:l), :tablespoon, :teaspoon, :cup, :cm3, :m3 |
+| Weight | :gram(:g), :milligram(:mg), :kilogram(:kg), :pound(:lb), :ounce(:ounce) |
+| Count  | :amount(:count) |
+| Materials | :flour, :water, :sunflower_oil, :eggs(:egg) |
+
+See examples in ./examples/*
 
 ## Installation
 
