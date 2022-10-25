@@ -2,20 +2,6 @@
 
 This gem is bunch of converters to convert one units of measure to another.
 
-Main function is 
-convert(amount, :input_measure, :output_measure, [optional] material)
-
-
-| Category | Allowable measures |
-| ------ | ------ |
-| Length | :centimeter(:cm), :meter(:m), :kilometer(:km), :millimeter(:mm), :inch(:in), :foot(:ft) |
-| Temperature | :kelvin(:k), :celsius(:c), :fahrenheit(:f)|
-| Volume | :milliliter(:ml), :liter(:l), :tablespoon, :teaspoon, :cup, :cm3, :m3 |
-| Weight | :gram(:g), :milligram(:mg), :kilogram(:kg), :pound(:lb), :ounce(:ounce) |
-| Count  | :amount(:count) |
-| Materials | :flour, :water, :sunflower_oil, :eggs(:egg) |
-
-See examples in ./examples/*
 
 ## Installation
 
@@ -29,7 +15,24 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+Main function is convert(amount, :input_measure, :output_measure, [optional] material)
+
+| Category | Allowable measures |
+| ------ | ------ |
+| Length | :centimeter(:cm), :meter(:m), :kilometer(:km), :millimeter(:mm), :inch(:in), :foot(:ft) |
+| Temperature | :kelvin(:k), :celsius(:c), :fahrenheit(:f)|
+| Volume | :milliliter(:ml), :liter(:l), :tablespoon, :teaspoon, :cup, :cm3, :m3 |
+| Weight | :gram(:g), :milligram(:mg), :kilogram(:kg), :pound(:lb), :ounce(:ounce) |
+| Count  | :amount(:count) |
+| Materials | :flour, :water, :sunflower_oil, :eggs(:egg) |
+
+Values in brackets are synonimes.
+
+Converts any measure to another in same category.
+Can convert volume to weight and vice versa for flour, water, sunflower_oil.
+Can convert amount to average weight and vice versa for eggs.
+
+See examples of usage in ./examples/*
 
 ## Development
 
