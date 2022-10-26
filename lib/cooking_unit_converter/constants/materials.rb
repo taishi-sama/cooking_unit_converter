@@ -12,9 +12,8 @@ module CookingUnitConverter
         milk: {g_per_cm3: 1.027},
         salt: {g_per_cm3: 2.165},
         honey: {g_per_cm3: 1.45},
-        rice: {g_per_cm3: 0.9}
-
-
-
+        rice: {g_per_cm3: 0.9},
+        cream: {g_per_cm3: 0.998},
+        butter: {g_per_cm3: 0.911}
     }
   end
