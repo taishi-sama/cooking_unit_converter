@@ -40,3 +40,4 @@ puts "200 grams of sugar powder equals " + CookingUnitConverter::convert(200, :g
 puts "1 gram of sugar powder equals " + CookingUnitConverter::convert(1, :g, :ml, :powdered_sugar).to_s() + " ml"
 
 puts "1 cup of sugar powder equals " + CookingUnitConverter::convert(1, :cup, :g, :powdered_sugar).to_s() + " g"
+

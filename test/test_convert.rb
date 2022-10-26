@@ -52,6 +52,9 @@ class TestCookingUnitConverterConvert < Minitest::Test
   def test_same_measure6_volume
     assert_in_delta convert(0.2,:m3,:m3), 0.2 , @@eps
   end
+  def test_same_measure7_volume
+    assert_in_delta convert(1,:cup,:tsp), 250/4.0 , @@eps
+  end
   def test_same_measure_weight
     assert_in_delta convert(100, :g, :g), 100, @@eps
   end
@@ -67,17 +70,42 @@ class TestCookingUnitConverterConvert < Minitest::Test
   def test_same_measure4_weight
     assert_in_delta convert(67, :mg, :mg), 67, @@eps
   end
-  def test_weigth_to_volume1
+  def test_same_measure5_weight
+    assert_in_delta convert(500, :g, :mg), 500*1000, @@eps
+  end
+  def test_same_measure6_weight
+    assert_in_delta convert(6, :lb, :oz), 6*453.6/28.35, @@eps
+  end
+  def test_weight_to_volume1
     assert_in_delta convert(250*0.65, :g, :cup, :flour), 1, @@eps
   end
-  def test_volume_to_weigth1
+  def test_weight_to_volume2
+    assert_in_delta convert(250*2.165, :g, :cup, :salt), 1, @@eps
+  end
+  def test_weight_to_volume3
+    assert_in_delta convert(250*0.87, :g, :cup, :sugar), 1, @@eps
+  end
+  def test_volume_to_weight1
     assert_in_delta convert(1, :cup, :g, :flour), 250*0.65, @@eps
+  end
+  def test_volume_to_weight2
+    assert_in_delta convert(1, :cup, :g, :salt), 250*2.165, @@eps
+  end
+  def test_volume_to_weight3
+    assert_in_delta convert(3, :cup, :g, :sugar), 3*250*0.87, @@eps
+  end
+  def test_volume_to_weight4
+    assert_in_delta convert(0.5, :cup, :oz, :honey), 0.5*250*1.45/28.35, @@eps
+  end
+  def test_volume_to_weight5
+    assert_in_delta convert(6, :tbsp, :g, :sugar_powder), 6*14*0.8, @@eps
   end
   def test_amount_to_weight1
     assert_in_delta convert(10, :amount, :g, :eggs), 60.0 * 10, @@eps
   end
-  def test_weigth_to_amount1
+  def test_weight_to_amount1
     assert_in_delta convert(60, :g, :amount , :eggs), 1, @@eps
   end
+
 
 end
