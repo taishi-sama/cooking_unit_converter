@@ -8,7 +8,10 @@ module CookingUnitConverter
     l:          :liter,
     liter:      1000.0,
 
+    tbsp:       :tablespoon,
     tablespoon: 14.0,
+
+    tsp:        :teaspoon,
     teaspoon:   4.0,
 
     cup:        250.0,

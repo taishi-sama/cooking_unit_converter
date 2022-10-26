@@ -22,3 +22,21 @@ puts "One cup of flour equals " + CookingUnitConverter::convert(1, :cup, :g, :fl
 puts "Ten eggs weight around " + CookingUnitConverter::convert(10, :amount, :g, :eggs).to_s() + " grams"
 
 puts "One kilogram of water equals " + CookingUnitConverter::convert(1, :kg, :l, :water).to_s() + " liters"
+
+puts  "One tbsp of salt equals " + CookingUnitConverter::convert(1, :tablespoon, :g, :salt).to_s() + " g"
+
+puts "One cup of salt equals " + CookingUnitConverter::convert(1, :cup, :kg, :salt).to_s() + " kg"
+
+puts "One cup of salt equals " + CookingUnitConverter::convert(1, :cup, :g, :salt).to_s() + " g"
+
+puts "One teaspoon of honey equals " + CookingUnitConverter::convert(1, :tsp, :g, :honey).to_s() + " g"
+
+puts "One cup of rice equals " + CookingUnitConverter::convert(1, :cup, :g, :rice).to_s() + " g"
+
+puts "200 grams of rice equals " + CookingUnitConverter::convert(200, :g, :tbsp, :rice).to_s() + " tbsp"
+
+puts "200 grams of sugar powder equals " + CookingUnitConverter::convert(200, :g, :tsp, :powdered_sugar).to_s() + " tsp"
+
+puts "1 gram of sugar powder equals " + CookingUnitConverter::convert(1, :g, :ml, :powdered_sugar).to_s() + " ml"
+
+puts "1 cup of sugar powder equals " + CookingUnitConverter::convert(1, :cup, :g, :powdered_sugar).to_s() + " g"

@@ -79,4 +79,5 @@ class TestCookingUnitConverterConvert < Minitest::Test
   def test_weigth_to_amount1
     assert_in_delta convert(60, :g, :amount , :eggs), 1, @@eps
   end
+
 end
