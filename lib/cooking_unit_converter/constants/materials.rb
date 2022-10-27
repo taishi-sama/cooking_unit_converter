@@ -19,7 +19,12 @@ module CookingUnitConverter
         cocoa: :cocoa_powder,
         cocoa_powder: {g_per_cm3: 0.65},
         gelatin: {g_per_cm3: 1.3},
-        condensed_milk: {g_per_cm3: 1.28}
+        condensed_milk: {g_per_cm3: 1.28},
+        pasta: :macaroni,
+        macaroni: {g_per_cm3: 0.26},
+        soda: {g_per_cm3:2.2},
+        starch: {g_per_cm3: 1.5}
+
 
 
     }
