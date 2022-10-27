@@ -9,14 +9,27 @@ module CookingUnitConverter
     liter:      1000.0,
 
     tbsp:       :tablespoon,
-    tablespoon: 14.0,
+    tablespoon: 15.0, #Метрическая ложка
 
     tsp:        :teaspoon,
-    teaspoon:   4.0,
+    teaspoon:   5.0,  #Метрическая ложка
 
-    cup:        250.0,
+
+    cup:        250.0, #Метрическая кружка
     
     cm3:        1.0,
     m3:         1_000_000.0,
+
+    #Американский галлон
+    gal:        :gallon,
+    gallon:     3785.41,
+
+    
+    #Имперская пинта
+    pt:         :pint,
+    pint:       568.26125,
+    #Американские пинты
+    liquid_pint:473.176473,
+    dry_pint: 550.610471,
   }
 end

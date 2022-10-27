@@ -21,7 +21,7 @@ Main function is convert(amount, :input_measure, :output_measure, [optional] mat
 | ------ | ------ |
 | Length | :centimeter(:cm), :meter(:m), :kilometer(:km), :millimeter(:mm), :inch(:in), :foot(:ft) |
 | Temperature | :kelvin(:k), :celsius(:c), :fahrenheit(:f)|
-| Volume | :milliliter(:ml), :liter(:l), :tablespoon, :teaspoon, :cup, :cm3, :m3 |
+| Volume | :milliliter(:ml), :liter(:l), :tablespoon(:tbsp), :teaspoon(:tsp), :cup, :cm3, :m3, :gallon(:gal), :pint(:pt), :liquid_pint, :dry_pint |
 | Weight | :gram(:g), :milligram(:mg), :kilogram(:kg), :pound(:lb), :ounce(:ounce) |
 | Count  | :amount(:count) |
 | Materials | :flour, :water, :sunflower_oil, :eggs(:egg), :salt, :sugar, :sugar_powder(:powdered_sugar), :rice, :milk, :honey, :baking_powder, :cocoa(:cocoa_powder), :gelatin, :condensed_milk|
@@ -32,6 +32,12 @@ Converts any measure to another in same category.
 Can convert volume to weight and vice versa for flour, water, sunflower_oil, salt, sugar, sugar_powder, rice, milk, honey, baking_powder, cocoa_powder, gelatin, condensed_milk
 
 Can convert amount to average weight and vice versa for eggs.
+
+Gallons(gals) from American version of imperial units.
+Pints(pt) from British imperial units.
+For American pints use liquid_pint and dry_pint.
+
+Teaspoons, tablespoons and cups are metric.
 
 See examples of usage in ./examples/*
 

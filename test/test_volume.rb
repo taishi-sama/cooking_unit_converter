@@ -29,10 +29,10 @@ class TestCookingUnitConverterVolume < Minitest::Test
         assert_in_delta convert_volume(500, :ml, :l), 0.5, @@eps
     end
     def test_fractionalml2
-        assert_in_delta convert_volume(2341, :ml, :teaspoon), 585.25, @@eps
+        assert_in_delta convert_volume(2341, :ml, :teaspoon), 468.2, @@eps
     end
     def test_fractionalml3
-        assert_in_delta convert_volume(910, :ml, :tablespoon), 65, @@eps
+        assert_in_delta convert_volume(910, :ml, :tablespoon), 60.6666666, @@eps
     end
     def test_fractionalml4
         assert_in_delta convert_volume(910, :ml, :cup), 3.64, @@eps
@@ -47,10 +47,10 @@ class TestCookingUnitConverterVolume < Minitest::Test
         assert_in_delta convert_volume(2, :cup, :ml), 500, @@eps
     end
     def test_fractionalc2
-        assert_in_delta convert_volume(1.4, :cup, :tablespoon), 25, @@eps
+        assert_in_delta convert_volume(1.4, :cup, :tablespoon), 23.3333333, @@eps
     end
     def test_fractionalc3
-        assert_in_delta convert_volume(0.96, :cup, :teaspoon), 60, @@eps
+        assert_in_delta convert_volume(0.96, :cup, :teaspoon), 48, @@eps
     end
     def test_fractionalc4
         assert_in_delta convert_volume(2, :cup, :cm3), 500, @@eps
@@ -62,22 +62,22 @@ class TestCookingUnitConverterVolume < Minitest::Test
         assert_in_delta convert_volume(4, :cup, :m3), 0.001, @@eps
     end
     def test_fractionaltbs1
-        assert_in_delta convert_volume(10, :tablespoon, :ml), 140, @@eps
+        assert_in_delta convert_volume(10, :tablespoon, :ml), 150, @@eps
     end
     def test_fractionaltbs2
-        assert_in_delta convert_volume(10, :tablespoon, :l), 0.140, @@eps
+        assert_in_delta convert_volume(10, :tablespoon, :l), 0.150, @@eps
     end
     def test_fractionaltbs3
-        assert_in_delta convert_volume(8, :tablespoon, :teaspoon), 28, @@eps
+        assert_in_delta convert_volume(8, :tablespoon, :teaspoon), 24, @@eps
     end
     def test_fractionaltbs4
-        assert_in_delta convert_volume(125, :tablespoon, :cup), 7, @@eps
+        assert_in_delta convert_volume(125, :tablespoon, :cup), 7.5, @@eps
     end
     def test_fractionaltbs5
-        assert_in_delta convert_volume(10, :tablespoon, :cm3), 140, @@eps
+        assert_in_delta convert_volume(10, :tablespoon, :cm3), 150, @@eps
     end
     def test_fractionaltbs6
-        assert_in_delta convert_volume(10, :tablespoon, :m3), 0.000140, @@eps
+        assert_in_delta convert_volume(10, :tablespoon, :m3), 0.000150, @@eps
     end
     def test_fractionalm21
         assert_in_delta convert_volume(1, :m3, :ml), 1000000, @@eps
@@ -88,32 +88,20 @@ class TestCookingUnitConverterVolume < Minitest::Test
     def test_fractionalm23
         assert_in_delta convert_volume(3, :m3, :cm3), 3000000, @@eps
     end
-    def test_fractionalm24
-        assert_in_delta convert_volume(0.0032, :m3, :teaspoon), 800, @@eps
-    end
-    def test_fractionalm25
-        assert_in_delta convert_volume(0.0112, :m3, :tablespoon), 800, @@eps
-    end
     def test_fractionalm26
         assert_in_delta convert_volume(0.03125, :m3, :cup), 125, @@eps
     end
-    def test_fractionaltes1
-        assert_in_delta convert_volume(312.5, :teaspoon, :cup), 5, @@eps
-    end
     def test_fractionaltes2
-        assert_in_delta convert_volume(21, :teaspoon, :tablespoon), 6, @@eps
+        assert_in_delta convert_volume(21, :teaspoon, :tablespoon), 7, @@eps
     end
     def test_fractionaltes3
-        assert_in_delta convert_volume(2, :teaspoon, :ml), 8, @@eps
+        assert_in_delta convert_volume(2, :teaspoon, :ml), 10, @@eps
     end
     def test_fractionaltes4
-        assert_in_delta convert_volume(100, :teaspoon, :l), 0.4, @@eps
+        assert_in_delta convert_volume(100, :teaspoon, :l), 0.5, @@eps
     end
     def test_fractionaltes5
-        assert_in_delta convert_volume(200, :teaspoon, :cm3), 800, @@eps
-    end
-    def test_fractionaltes6
-        assert_in_delta convert_volume(250, :teaspoon, :m3), 0.001, @@eps
+        assert_in_delta convert_volume(200, :teaspoon, :cm3), 1000, @@eps
     end
     def test_fractionall1
         assert_in_delta convert_volume(2, :l, :ml), 2000, @@eps
@@ -122,10 +110,10 @@ class TestCookingUnitConverterVolume < Minitest::Test
         assert_in_delta convert_volume(1, :l, :cup), 4, @@eps
     end
     def test_fractionall3
-        assert_in_delta convert_volume(0.084, :l, :tablespoon), 6, @@eps
+        assert_in_delta convert_volume(0.084, :l, :tablespoon), 5.6, @@eps
     end
     def test_fractionall4
-        assert_in_delta convert_volume(0.08, :l, :teaspoon), 20, @@eps
+        assert_in_delta convert_volume(0.08, :l, :teaspoon), 16, @@eps
     end
     def test_fractionall5
         assert_in_delta convert_volume(0.5, :l, :cm3), 500, @@eps
@@ -143,10 +131,10 @@ class TestCookingUnitConverterVolume < Minitest::Test
         assert_in_delta convert_volume(250, :cm3, :cup), 1, @@eps
     end
     def test_fractionalcm4
-        assert_in_delta convert_volume(28, :cm3, :tablespoon), 2, @@eps
+        assert_in_delta convert_volume(30, :cm3, :tablespoon), 2, @@eps
     end
     def test_fractionalcm5
-        assert_in_delta convert_volume(16, :cm3, :teaspoon), 4, @@eps
+        assert_in_delta convert_volume(20, :cm3, :teaspoon), 4, @@eps
     end
     def test_fractionalcm6
         assert_in_delta convert_volume(1340, :cm3, :m3), 0.00134, @@eps
