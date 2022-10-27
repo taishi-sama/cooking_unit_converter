@@ -41,3 +41,9 @@ puts "1 gram of sugar powder equals " + CookingUnitConverter::convert(1, :g, :ml
 
 puts "1 cup of sugar powder equals " + CookingUnitConverter::convert(1, :cup, :g, :powdered_sugar).to_s() + " g"
 
+
+puts "1 cup of cocoa powder equals " + CookingUnitConverter::convert(1, :cup, :g, :cocoa_powder).to_s() + " g"
+
+puts "3 tablespoon of baking powder equals " + CookingUnitConverter::convert(3, :tablespoon, :g, :baking_powder).to_s() + " g"
+
+puts "3 liters of condensed milk equals " + CookingUnitConverter::convert(3, :l, :kg, :condensed_milk).to_s() + " kg"

@@ -14,6 +14,13 @@ module CookingUnitConverter
         honey: {g_per_cm3: 1.45},
         rice: {g_per_cm3: 0.9},
         cream: {g_per_cm3: 0.998},
-        butter: {g_per_cm3: 0.911}
+        butter: {g_per_cm3: 0.911},
+        baking_powder: {g_per_cm3: 0.72},
+        cocoa: :cocoa_powder,
+        cocoa_powder: {g_per_cm3: 0.65},
+        gelatin: {g_per_cm3: 1.3},
+        condensed_milk: {g_per_cm3: 1.28}
+
+
     }
   end
