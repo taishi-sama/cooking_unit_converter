@@ -24,12 +24,12 @@ Main function is convert(amount, :input_measure, :output_measure, [optional] mat
 | Volume | :milliliter(:ml), :liter(:l), :tablespoon(:tbsp), :teaspoon(:tsp), :cup, :cm3, :m3, :gallon(:gal), :pint(:pt), :liquid_pint, :dry_pint |
 | Weight | :gram(:g), :milligram(:mg), :kilogram(:kg), :pound(:lb), :ounce(:ounce) |
 | Count  | :amount(:count) |
-| Materials | :flour, :water, :sunflower_oil, :eggs(:egg), :salt, :sugar, :sugar_powder(:powdered_sugar), :rice, :milk, :honey, :baking_powder, :cocoa(:cocoa_powder), :gelatin, :condensed_milk, :starch, :soda, :pasta, :cream, :butter|
+| Materials | :flour, :water, :sunflower_oil, :eggs(:egg), :salt, :sugar, :sugar_powder(:powdered_sugar), :rice, :milk, :honey, :baking_powder, :cocoa(:cocoa_powder), :gelatin, :condensed_milk, :starch, :soda, :pasta, :cream, :butter, :margarine, :olive_oil|
 
 Values in brackets are synonimes.
 
 Converts any measure to another in same category.
-Can convert volume to weight and vice versa for flour, water, sunflower_oil, salt, sugar, sugar_powder, rice, milk, honey, baking_powder, cocoa_powder, gelatin, condensed_milk, starch, soda, pasta, cream, butter
+Can convert volume to weight and vice versa for flour, water, sunflower_oil, salt, sugar, sugar_powder, rice, milk, honey, baking_powder, cocoa_powder, gelatin, condensed_milk, starch, soda, pasta, cream, butter, margarine, olive_oil
 
 Can convert amount to average weight and vice versa for eggs.
 
